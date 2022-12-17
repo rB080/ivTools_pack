@@ -1,3 +1,8 @@
+#custom
+test.py
+testdata/
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
