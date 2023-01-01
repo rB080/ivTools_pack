@@ -13,6 +13,13 @@ def NumpyToPil(img):
     return Image.fromarray(img)
 
 
+def resize(img, set_size):
+    img = NumpyToPil(img)
+    img = img.resize(set_size)
+    img = pilToNumpy(img)
+    return img
+
+
 def attach(im1, im2, orientation="horizontal"):
     assert im1.shape[2] == im2.shape[2], "Channel number mismatch error."
 
